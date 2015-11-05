@@ -1,3 +1,8 @@
+/*everything on page*/
+* {
+  font-family: 'Istok Web', sans-serif;
+}
+
 /*Header should be top center*/
 h1 {
   border: 1px solid black;
@@ -19,6 +24,7 @@ nav {
   margin-left: -9px;
   padding-left: 0px;
   background: blue;
+  font-size: 20px;
 }
 
 nav > img {
@@ -41,11 +47,32 @@ nav > ul {
 
 nav > ul > li {
   padding: 10px;
+  border-style: ridge;
+  border-width: 3px;
 }
 
 /*content should be this many pixel from left*/
 
 section {
-  border: 1px solid green;
-  margin-left: 200px;
+  border: 1px dashed green;
+  margin-left: 180px;
+  width: 600px;
+  padding-left: 10px;
+}
+
+section > h3 {
+  border: 1px dotted purple;
+  font-weight: bolder;
+}
+
+article::first-letter {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+article > p {
+  border: 1px solid red;
+  text-indent: 30px;
+  word-spacing: 2px;
+  line-height: 120%;
 }
