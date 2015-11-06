@@ -1,78 +1,118 @@
 /*everything on page*/
 * {
   font-family: 'Istok Web', sans-serif;
+  background-color: #D2E8FF;
 }
 
 /*Header should be top center*/
 h1 {
-  border: 1px solid black;
   padding: 5px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
   width: 50%;
   text-align: center;
+  font-size: 40px;
 }
 
 /*Nav will be left fixed*/
 nav {
-  border: 1px solid blue;
   position: fixed;
+  left: 0;
+  top: 0;
   height: 100%;
   width: 180px;
-  margin-top: -81px;
-  margin-left: -9px;
-  padding-left: 0px;
-  background: blue;
   font-size: 20px;
+  background-color: #AAD4FF;
 }
 
-nav > img {
+img#nav-logo {
   width: 180px;
   height: auto;
+  top: 0;
+  left: 0;
+  display: inline;
 }
 
-ul {
-  margin-top: 10px;
+ul.nav-items {
+  margin-top: 0px;
   padding-left: 0px;
 }
 
-ul > li:first-of-type {
+ul.nav-items > li:first-of-type {
   font-weight: bolder;
+  text-align: center;
+  background-color: #AAD4FF;
 }
 
-nav > ul {
-  list-style-type: none;
+nav > ul > a {
+  text-decoration: none;
+  display: block;
+  color: inherit;
 }
 
-nav > ul > li {
+ul.nav-items > a > li {
   padding: 10px;
   border-style: ridge;
-  border-width: 3px;
-}
+  border-width: 2px;
+  margin: 2px;
+  background-color: #AAD4FF;
+} 
 
 /*content should be this many pixel from left*/
 
 section {
-  border: 1px dashed green;
   margin-left: 180px;
   width: 600px;
   padding-left: 10px;
 }
 
 section > h3 {
-  border: 1px dotted purple;
+  display: inline-block;
   font-weight: bolder;
+  font-size: 32px;
 }
 
-article::first-letter {
-  font-size: 20px;
+section > img {
+  float: right;
+  display: inline-block;
+  height: auto;
+  width: 200px;
+  clear: left;
+  padding: 10px;
+}
+
+.section-text::first-letter {
+  font-size: 30px;
   font-weight: bold;
 }
 
-article > p {
-  border: 1px solid red;
+p.section-text {
   text-indent: 30px;
   word-spacing: 2px;
   line-height: 120%;
+  text-align: justify;
 }
+
+/*custom Ad's*/
+
+aside {
+  border: 1px solid black;
+  display: inline-block;
+  position: fixed;
+  top: 25%;
+  bottom: 25%;
+  right: 0;
+  clear: right;
+  width: 150px
+}
+
+aside > img {
+  width: 150px;
+  height: auto;
+}
+
+aside > p {
+  text-align: center;
+}
+
