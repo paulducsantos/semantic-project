@@ -1,0 +1,205 @@
+/* CSS for HTML5 Elements Project */
+
+body {
+    background: linear-gradient(
+      to bottom,
+      #FFF0A5,
+      #FFB03B
+    );
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+#banner-title {
+  text-align: center;
+  margin-top: 65px;
+}
+
+.container {
+  width: 960px;
+  height: auto;
+  margin: 0 auto;
+}
+
+#nav-area {
+  background-color: #FFF0A5;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+}
+
+#nav {
+  list-style: none;
+  margin-left: 23.5%;
+}
+
+#nav a {
+  color: black;
+  text-decoration: none;
+}
+
+#nav li {
+  float: left;
+  margin-left: 30px;
+  background-color: #FFB03B;  /*  Change this color once site is deployed  */
+  padding: 8px;
+  border: 1px white;
+  border-radius: 5px;
+  margin-top: -5px;
+}
+
+#nav li:hover {
+  background-color: orange;
+}
+
+header {
+  margin-top: 2px
+}
+
+aside {
+  position: absolute;
+  top: 115px;
+  right: 0px;
+  width: 200px;
+  padding: 0px 5px
+}
+
+#social-media {
+  position: fixed;
+  top: 675px;
+  right: -60px;
+}
+
+#social-media a {
+  padding-right: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+#social-media a:hover {
+  color: gray;
+}
+
+#copyright {
+  position: fixed;
+  top: 690px;
+}
+
+.small-text {
+  font-size: 0.8em;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+img.fifty-percent {
+  width: 50%;
+  height: auto;
+}
+
+img.aside-img {
+  width: 100px;
+  height: auto;
+}
+
+#puerto-rico-text {
+  position: relative;
+  bottom: 600px;
+  left: 75px;
+}
+
+#amsterdam-text {
+  position: relative;
+  bottom: 200px;
+  left: 5px;
+}
+
+#france-text {
+  position: relative;
+  bottom: 650px;
+  left: 25px;
+}
+
+#hawaii-text {
+  position: relative;
+  bottom: 650px;
+  left: 575px;
+  color: white;
+}
+
+#spain-text {
+  position: relative;
+  bottom: 75px;
+  left: 15px;
+  color: white;
+}
+
+footer p {
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1280px) {
+
+  body {
+    width: 980px;
+    padding: 0px 20px;
+  }
+
+  .container {
+  width: 100%;
+  }
+
+  #nav {
+    margin-left: 0;
+    margin-left: 10%;
+  }
+
+  #nav-area {
+    position: absolute;
+  }
+
+  #nav li {
+    margin-left: 30px;
+    padding: 8px;
+    border: 1px white;
+    border-radius: 5px;
+    margin-top: -5px;
+  }
+
+/*  h1, p {         figure out how to get text to be responsive
+    width: 100%;
+  } */
+
+  aside {
+    position: static;
+    width: 50%;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  #social-media {
+  position: relative;
+  left: 50%;
+  top: 0px;
+  font-size: 2em;
+  }
+
+  #copyright {
+  position: relative;
+  left: 36%;
+  top: 0px;
+  font-size: 2em;
+  }
+
+}
