@@ -67,10 +67,12 @@ section {
   padding-left: 10px;
 }
 
-section > h3 {
+section > a > h3 {
   display: inline-block;
   font-weight: bolder;
-  font-size: 32px;
+  font-size: 2em;
+  margin-bottom: -20px;
+  color: red;
 }
 
 section > img {
@@ -88,6 +90,7 @@ section > img {
 }
 
 p.section-text {
+  font-size: 1.25em;
   text-indent: 30px;
   word-spacing: 2px;
   line-height: 120%;
@@ -104,7 +107,8 @@ aside {
   bottom: 25%;
   right: 0;
   clear: right;
-  width: 150px
+  width: 150px;
+  margin-right: 10px; 
 }
 
 aside > img {
@@ -116,3 +120,15 @@ aside > p {
   text-align: center;
 }
 
+/*footer*/
+
+footer {
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  clear: right;
+  width: 15%;
+  text-align: right;
+  margin-right: 20px;
+}
